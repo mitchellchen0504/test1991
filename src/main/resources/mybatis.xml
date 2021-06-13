@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--settings是控制mybatis全局行为的-->
+    <settings>
+        <!--设置mybatis输出日志的 打印到控制台-->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <!--设置别名-->
+    <typeAliases>
+        <!--name是实体类的包名-->
+        <package name="com.bjpowernode.domain"/>
+    </typeAliases>
+
+    <!--环境配置：就是数据库的连接信息-->
+    <mappers>
+        <!--name是mapper文件所在的包名-->
+        <package name="com.bjpowernode.dao"></package>
+    </mappers>
+</configuration>
+
